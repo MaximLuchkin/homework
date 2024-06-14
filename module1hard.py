@@ -1,10 +1,9 @@
 grades = [[5, 3, 3, 5, 4], [2, 2, 2, 3], [4, 5, 5, 2], [4, 4, 3], [5, 5, 5, 4, 5]]
 students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}
-students = sorted(students)
-set_ = {}
-set_.update({students[0]: sum(grades[0])/len(grades[0])})
-set_.update({students[1]: sum(grades[1])/len(grades[1])})
-set_.update({students[2]: sum(grades[2])/len(grades[2])})
-set_.update({students[3]: sum(grades[3])/len(grades[3])})
-set_.update({students[4]: sum(grades[4])/len(grades[4])})
-print(set_)
+students_sorted = sorted(students)
+students_grades = {}
+for i, students in enumerate(students_sorted):
+        students_grades_list = grades[i]
+        average_grade = sum(students_grades_list) / len(students_grades_list)
+        students_grades[students] = average_grade
+print(students_grades)
