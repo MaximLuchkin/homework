@@ -1,6 +1,6 @@
-number_left = list(range(3,20))
-number1 = list(range(1,20))
-number2 = list(range(1,20))
+number_left = list(range(3, 20))
+number1 = list(range(1, 20))
+number2 = list(range(1, 20))
 number_right = []
 for i in number_left:
     password_number = []
@@ -21,8 +21,11 @@ for i in number_left:
                 next_password = str(k) + str(j)
                 password_number.append(next_password)
     number_right.append(password_number)
+
+
 def all_passwords():
     for i in number_right:
         print(*i)
+
 
 all_passwords()
