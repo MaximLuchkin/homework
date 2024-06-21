@@ -1,6 +1,6 @@
-number_left = list(range(3, 20))
-number1 = list(range(1, 20))
-number2 = list(range(1, 20))
+number_left = list(range(3, 21))
+number1 = list(range(1, 21))
+number2 = list(range(1, 21))
 number_right = []
 for i in number_left:
     password_number = []
