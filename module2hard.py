@@ -13,8 +13,7 @@ for i in number_left:
             elif j <= k:
                 continue
             multiple_of_number = True
-            summa_numbers = k + j
-            if i % summa_numbers != 0:
+            if i % (k + j) != 0:
                 multiple_of_number = False
                 continue
             elif multiple_of_number:
