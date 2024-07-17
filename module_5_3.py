@@ -61,51 +61,37 @@ class House:
     def __add__(self, value):
         if isinstance(self.number_of_floors, int):
             self.number_of_floors = self.number_of_floors + value
-            return self
-        else:
-            return 'Ошибка'
+        return self
 
     def __radd__(self, value):
         if isinstance(self.number_of_floors, int):
             self.number_of_floors = value + self.number_of_floors
-            return self
-        else:
-            return 'Ошибка'
+        return self
 
     def __iadd__(self, value):
         if isinstance(self.number_of_floors, int):
             self.number_of_floors = value + self.number_of_floors
-            return self
-        else:
-            return 'Ошибка'
+        return self
 
     def __sub__(self, value):
         if isinstance(self.number_of_floors, int):
             self.number_of_floors = self.number_of_floors - value
-            return self
-        else:
-            return 'Ошибка'
+        return self
 
     def __rsub__(self, value):
         if isinstance(self.number_of_floors, int):
             self.number_of_floors = value - self.number_of_floors
-            return self
-        else:
-            return 'Ошибка'
+        return self
 
     def __mul__(self, value):
         if isinstance(self.number_of_floors, int):
             self.number_of_floors = self.number_of_floors * value
-            return self
-        else:
-            return 'Ошибка'
+        return self
 
     def __floordiv__(self, value):
         if isinstance(self.number_of_floors, int):
             self.number_of_floors = self.number_of_floors // value
-            return self
-        else:
-            return 'Ошибка'
+        return self
 
 
 h1 = House('ЖК Эльбрус', 10)
