@@ -23,9 +23,6 @@ class UrTube:
         self.videos = []
         self.current_user = None
 
-    def __str__(self):
-        return self.users
-
     def add(self, *videos):
         for video in videos:
             if video not in self.videos:
