@@ -28,14 +28,14 @@ class UrTube:
             if video not in self.videos:
                 self.videos.append(video)
             else:
-                return 'Видео с таким названием уже существует'
+                return print('Видео с таким названием уже существует')
 
     def log_in(self, nickname, password):
         for user in self.users:
             if nickname == user.nickname and user.password == hash(password):
                 self.current_user = nickname
             else:
-                return 'Не верное имя пользователя или пароль'
+                return print('Не верное имя пользователя или пароль')
 
     def register(self, nickname, password, age):
         if any(user.nickname == nickname for user in self.users):
