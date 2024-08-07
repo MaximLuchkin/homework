@@ -4,7 +4,7 @@ import time
 
 for root, dirs, files in os.walk('.'):
     for file in files:
-        filepath = os.path.join(root, file)
+        filepath = os.path.join(file)
 
         filetime = os.path.getmtime(filepath)
 
