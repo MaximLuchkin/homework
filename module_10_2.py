@@ -19,8 +19,8 @@ class Knight(threading.Thread):
             self.enemies -= self.power
             if self.enemies <= 0:
                 self.enemies = 0
-            print(f"{self.name} сражается {days}..., осталось {self.enemies} воинов.")
-        return f"{self.name} одержал победу спустя {days} дней(дня)!"
+            print(f"{self.name} сражается {days} день(дня), осталось {self.enemies} воинов.")
+        print(f"{self.name} одержал победу спустя {days} дней(дня)!")
 
 
 first_knight = Knight('Sir Lancelot', 10)
